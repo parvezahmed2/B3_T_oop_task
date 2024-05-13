@@ -1,0 +1,22 @@
+Difference between abstract class and interface in Python?
+
+Abstract Class:     
+i) An abstract features developer’s class can consist of abstract as well as concrete methods
+ii) 	It is used when there are some common feature shared by all objects
+iii)  Its developer responsibility to create a child class for the features of an abstract class
+iv) It is comparatively fast
+
+
+
+Interface: 
+i) 	All methods of an interface are abstract
+ii) It is used when all the feature need to be implemented differently for different objects
+iii)  Any 3rd person will responsible for creating a child class
+iv) It is comparatively slow
+
+
+
+
+
+
+
