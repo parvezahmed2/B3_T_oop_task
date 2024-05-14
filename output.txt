@@ -1,0 +1,2 @@
+Area of Triangle: 300
+Area of Rectangle: 600

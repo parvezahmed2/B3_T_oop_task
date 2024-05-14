@@ -1,42 +1,53 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 class Bank {
-private:
+ public:
     string holder_name;
     double balance;
 
-public:
- 
-    Bank(string holder_name, double initial_deposit) : holder_name(holder_name), balance(initial_deposit) {}
 
-  
+    Bank(string holder_name, double initial_deposit){
+        this->holder_name = holder_name;
+        this->balance = initial_deposit;
+        
+    }
+
     void deposit(double amount) {
         balance += amount;
     }
 
-     
-    double get_balance() {
+    double get_balance() const {
         return balance;
     }
 
-   
     string withdraw(double amount) {
         if (amount <= balance) {
             balance -= amount;
-            return "Withdrawn amount: " + to_string(amount);
+            return "Withdrawn: "+to_string(amount);
         } else {
-            return "Fokira taka nai";
+            return "Insufficient funds";
         }
+    }
+
+    string get_holder_name() const {
+        return holder_name;
     }
 };
 
 int main() {
-    
-    Bank rafsun("Chooto bro", 10000);
+    Bank fahim("saidul islam", 10000);
+
+
+    cout<<fahim.get_holder_name()<<endl;
+
+    cout<<fahim.get_balance()<<endl;
+
+    cout<<fahim.withdraw(5000)<<endl;
 
     
-    cout<<rafsun.get_balance()<<endl;
-
+    cout<<fahim.get_balance()<<endl;
     return 0;
 }
+ 
+
+

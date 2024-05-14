@@ -1,4 +1,3 @@
-
 class Animal:
     def __init__(self, name) -> None:
         self.name = name
@@ -12,7 +11,7 @@ class Cat(Animal):
         super().__init__(name)
     
     def make_sound(self):
-        print('meow meow')
+        print('hello i am meow')
 
 
 class Dog(Animal):
@@ -21,7 +20,7 @@ class Dog(Animal):
 
 
     def make_sound(self):
-        print('gheu gheu ')
+        print('hello i am dog ')
 
 
 
@@ -30,10 +29,7 @@ class Goat(Animal):
         super().__init__(name)
     
     def make_sound(self):
-        print('beh beh beh')
-
-
-
+        print('it is goat ')
 
 
 
@@ -45,10 +41,8 @@ shepard = Dog('Local Shephard ')
 shepard.make_sound()
 
 
-
 mess = Goat('L M')
 mess.make_sound()
-
 
 less = Goat('gora gori')
 

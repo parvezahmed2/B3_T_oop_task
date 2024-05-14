@@ -1,0 +1,374 @@
+Difference between abstract class and interface in Python?  :
+------------------------------------------------------------
+
+Abstract Class:     
+i) An abstract features developer’s class can consist of abstract as well as concrete methods
+ii) 	It is used when there are some common feature shared by all objects
+iii)  Its developer responsibility to create a child class for the features of an abstract class
+iv) It is comparatively fast
+
+
+
+Interface: 
+i) 	All methods of an interface are abstract
+ii) It is used when all the feature need to be implemented differently for different objects
+iii)  Any 3rd person will responsible for creating a child class
+iv) It is comparatively slow
+
+
+
+
+------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+virtual function in c++ : 
+
+A C++ virtual function is a member function in the base class that you redefine in a derived class. It is declared using the virtual keyword.
+It is used to tell the compiler to perform dynamic linkage or late binding on the function.
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+1) Which keyword is used to exit a loop prematurely in Python?    ans (b)
+    a. continue                         b. beack
+    c. exit                             d. stop 
+
+
+2) Which keyword is used to define a function in Python?       ans(b)
+    a. DEF                              b. def 
+    b. function                         c. Function 
+
+
+3) def solve(a b):                                                    ans ( 16 )
+       return a**b 
+    
+    result = solve(2, 4)
+    print(result)
+
+    What will be the output of the above program?
+          a. 2                               b. 4
+          c. 8                               d. 16
+
+
+
+4) def display_person(**kwargs):
+    for key,value in kwargs.items():
+        print(f"{key}: {value}")
+
+    display_person(Name="Parvez ahmed", Age="23")
+
+
+    What will be the output of the above program?                   ans (b)
+
+    a. Name: Parvez ahmed age 23                    b. Name: parvez ahmed  Age: 23
+    c. name: Amir Khan age : 23                     d. none 
+
+
+5)  Which are the built-in functions of Python?
+
+    a. abs()                        b. max()
+    c.type()                        d. All of the above 
+
+
+
+6)  numbers =[7,8,5,4,3,2,4]
+    print(numbers[::-1])
+    What will be the output of the above program ?
+    a. [4, 2, 3, 4, 5, 8 , 7]                   b. [7, 8, 5, 4, 3, 2, 4]
+    c. [5, 8, 7, 4, 3, 2, 4]                    d. [4, 3, 2, 4, 5, 8, 7]
+
+
+7)  Which are the built-in functions of list in Python?                 ans(d)
+    a. append()                             b. insert()
+    c. sort( )                              d. All of the above 
+
+
+8)  numbers = [10, 20, 30, 40, 50]
+    print(numbers[-4:-1])
+    What will be the output of the above program ?                      and (c)
+
+    a. [10, 20, 30]                         b. [50, 40, 30]
+    c. [20, 30, 40]                         d. [30, 40 , 50]
+
+
+
+9) which one is immutable in python ?                                   ans(b)
+    a. List                     b. Tuble 
+    c. a & b                    d. None
+
+
+10) Which are the built in functions of set in python ?                 ans (d)
+    a. issubest()                         b. intersection()
+    c. union()                            d. All of the above 
+
+
+
+11) Which keyword is used to declare a class in python ?                    ans(a)
+    a. class                            b. Class 
+    c. a & b                            d. none 
+
+
+12) __init__ is used to declare a constructor in Python -                     ans(a)
+    a. True                                 b. false
+
+
+13) class A:
+    def __init__(self, value):
+        value = 3
+        self.value = value
+
+    def change(self):
+        self.value = 12
+
+
+    ans = []
+    a = A(13)
+    ans.append(a.value)
+    a.change()
+    ans.append(a.value)
+    print(ans)
+
+
+    What will be the output of the above program ?                                      ans(c)
+
+    a. [13, 12]                             b.[12, 3]
+    c. [3, 12]                              d. [12, 13]
+
+
+
+
+
+14) class Shop:                                                     ans(d)
+        cart = []
+
+        def __init__(self, buyer):
+            self.buyer = buyer
+
+        def add_to_cart(self, item):
+            self.cart.append(item)
+
+
+        p1 = Shop('meh jabeeeen')
+        p1.add_to_cart('shoes')
+        p1.add_to_cart('phone')
+
+
+        nisho = Shop('noisho')
+        nisho.add_to_cart('cap')
+        nisho.add_to_cart('watch')
+        print(nisho.cart)
+
+
+
+        What will be the output of the above program ?
+            a. ['shoes', 'phone']                           b. ['cap', 'watch']
+            c. ['shoes', 'phone', 'watch', 'cap']            d. ['shoes', 'phone', 'cap' 'watch']    
+
+
+
+
+15)List is immutable in python __ _                                 ans(b)
+    a. true                         b. false
+
+
+
+16) Inheritance, Polymorphism, Encapsulation and Abstraction are called the four pillars of Object Oriented  Programming -                                                                              ans(a)
+    a. True                         b. False 
+
+
+17) Which function is used when we implement inheritance in Python ?                        ans(c)
+    a.Super()                       b.Super_Dupper()
+    c. super()                      d. none
+
+
+18) class Gadget:                                                               ans(a)
+        def __init__(self, brand, price, color, origin) -> None:
+            self.brand = brand
+            self.price = price
+            self.color = color
+            self.origin = origin
+
+
+        def run(self):
+            return f'Running laptop: {self.brand}'
+
+
+    class Phone(Gadget):
+        def __init__(self, brand, price, color, origin, dual_sim) -> None:
+            self.dual_sim = dual_sim
+            super().__init__(brand, price, color, origin)
+
+
+        def __repr__(self) -> str:
+            return f'phone: {self.brand} {self.price} {self.dual_sim}'
+
+
+    my_phone = Phone('iphone', 120000, 'silver', 'china', True)
+    print(my_phone)
+
+
+
+    The above program is an exmple of _ _                           
+
+        a. simple inheritance                                   b. Multi_level inheritance
+        c. Multiple inheritance                                 d. Hybrid inheritance 
+
+
+
+
+19)     #include<iostream>                                                      ans (c)
+        using namespace std;
+ 
+    class A
+    {
+    public:
+        A()  { cout << "A's constructor called" << endl; }
+    };
+ 
+    class B
+    {
+    public:
+        B()  { cout << "B's constructor called" << endl; }
+    };
+ 
+    class C: public B, public A   // Multiple inheritance 
+    {
+    public:
+        C()  { cout << "C's constructor called" << endl; }
+        };
+ 
+int main()
+{
+    C c;
+    return 0;
+}
+
+
+
+The above program is an example of -- 
+        a. simple inheritance                       b.  Multi-level inheritance 
+        c. Multiple inheritace                      d. Hybrid inheritance 
+
+
+
+
+
+20)     class A // base class                                               ans(b)
+        {
+            - - - - - - - -- - 
+            - - - - - -  -
+        };
+        class B : access_specifier A // derived class
+            {
+                - - - - - - - - - - 
+                -- - - - - - - - - - 
+        } ;
+        class C : access_specifier B // derived from derived class B
+        {
+            - - - - - - 
+        } ;
+
+
+        The above program is an example of - 
+
+         a. simple inheritance                       b.  Multi-level inheritance 
+        c. Multiple inheritace                      d. Hybrid inheritance 
+
+
+21) Polymorphism means _ _ _                                            ans(c)
+    a. Two forms                                b. Three forms 
+    c. Many forms                               d. None 
+
+
+
+22)     cnt = {}                                                ans(d)
+        i = 1
+        if i not in cnt:
+            cnt[i] = 1
+        else:
+            cnt[i] += 1
+
+        print(cnt)
+
+        What will be the output of the above program ?
+
+            a. {2: 1}                                   b. {2 : 2}
+            c. {1 : 2}                                  d. {1 : 1}
+
+
+23)                                                                        ans(a)
+    #include <bits/stdc++.h>
+    using namespace std;
+ 
+    // Base class
+    class Parent {
+    public:
+        int id_p;
+    };
+ 
+     
+    class Child : public Parent {
+    public:
+        int id_c;
+    };
+ 
+    // main function
+    int main()
+    {
+        Child obj1;
+ 
+     
+        obj1.id_c = 7;
+         obj1.id_p = 91;
+        cout << "Child id is: " << obj1.id_c <<endl;
+        cout << "Parent id is: " << obj1.id_p <<endl;
+ 
+    return 0;
+}
+
+The above program is an example of - 
+
+         a. simple inheritance                       b.  Multi-level inheritance 
+        c. Multiple inheritace                      d. Hybrid inheritance 
+
+
+
+24) by defult the numerical data in Seies is starting from.             ans (b)
+    a. 2                                b. 0
+    c. 4                                d. 4
+
+
+24)   Which of the following is advantage of using object oriented programming ?        ans(d)
+    a. code reusability                         b. can create more than one instance of a class without interfernce 
+    d. platfom independent                      d.All options are correct 
+
+25) Which of the following approach is following by object oriented  language the execution of a program?  ans(a)
+    a. bottom up approch                        b. Top down approach 
+    c. None of these 
+
+
+26) What is the process of defining a new class based on an existing class called?              ans( b)
+
+    a.Polymorphisom                                 b. inheritance 
+    c. Abstruction                                  d. encapsulation 
+
+27) Which keyword is used to inherit a class in Python?
+    a. extends                              b. inherit 
+    c. superclass                           d. class 
+
+
+28) What is Instantiation in terms of OOP terminology?
+    a. 	Deleting an instance of class             b. Modifying an instance of class
+    c.  Copying an instance of class               d.	Creating an instance of class
+
+
+29) The assignment of more than one function to a particular operator is _
+    a. Operator over-assignment                     b. Operator overriding
+    c.  	Operator overloading                    d. 	Operator instance
+
+
+30) Which among the following doesn’t come under OOP concept?                           and(c)
+    a. Data hiding                                  b. Message passing
+    c. Platform independent                         d. Data binding

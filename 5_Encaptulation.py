@@ -1,5 +1,3 @@
- 
-
 class Bank:
     def __init__(self, holder_name, initial_deposit) -> None:
         self.holder_name = holder_name
@@ -19,12 +17,10 @@ class Bank:
             return f'Fokira taka nai'
 
 
-rafsun = Bank('Chooto bro', 10000)
+fahim = Bank('saidul islam', 10000)
 
-print(rafsun.holder_name)
+print(fahim.holder_name)
 
-
-
-
-print(rafsun._Bank__balance)  
+ 
+print(fahim._Bank__balance)  
 
